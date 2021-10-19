@@ -3,9 +3,6 @@ from Model import model
 from form import LoginForm
 app=Flask(__name__, template_folder='../template',static_folder='../Static')
 
-@app.route('/')
-def home():  
-    return render_template('login1.html')
 
 @app.route('/register1')
 def register1():
